@@ -17,6 +17,17 @@ html{
     font-size: 18px;
 }
 
+#right-crab{
+    position:relative;
+    right: 40%;
+}
+
+#left-crab{
+    position:relative;
+    left: 40%;
+}
+
+
 .header-links{
     text-align: center;
     margin-left: auto;

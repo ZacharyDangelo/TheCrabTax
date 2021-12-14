@@ -9,12 +9,16 @@
 
 //var secondsUntilUpdate = seconds until we should reach the targetAmount of gold
 // sent in from flask
+var currentGold;
 
+if(changePerSecond <0){
+    changePerSecond = 90000
+}
 
 //This script should determine how much gold should be displayed between those two and tick up if needed
 let gold = document.getElementById("goldCounter");
-//startingAmount = startingAmount + (targetAmount/secondsUntilUpdate)
 gold.innerHTML = numberWithCommas(Math.round(startingAmount));
+currentGold = startingAmount;
 
 var interval = setInterval(countGold, 1000);
 
@@ -45,10 +49,16 @@ function numberWithCommas(x) {
 
 function countGold(){
     let gold = document.getElementById("goldCounter");
-    let newGoldAmount = startingAmount + changePerSecond;
-    startingAmount = newGoldAmount;
-    gold.innerHTML = numberWithCommas(Math.round(newGoldAmount));
+    currentGold = currentGold + changePerSecond;
+    gold.innerHTML = numberWithCommas(Math.round(currentGold));
     secondsUntilUpdate = secondsUntilUpdate -1;
+
+    if(secondsUntilUpdate <= 0 ){
+        secondsUntilUpdate = 86400 //There are 86,400 seconds in a day.
+    }
+    console.log(changePerSecond);
+
+
     updateTrackers()
 }
 

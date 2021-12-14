@@ -41,7 +41,10 @@ def getData():
     dataDict["secondsUntilUpdate"] = int(todays_data.split(":")[1]) - round(time.time() - 86400)
     accumulatedChange = int(todays_data.split(":")[0]) * (1 - dataDict["secondsUntilUpdate"]/86400)
     startingAmount = startingAmount + (accumulatedChange)
+
     changePerSecond = (targetAmount -startingAmount - accumulatedChange)/dataDict["secondsUntilUpdate"]
+
+
     dataDict["startingAmount"] = startingAmount
     dataDict["accumulatedChange"] = accumulatedChange
     dataDict["changePerSecond"] = changePerSecond

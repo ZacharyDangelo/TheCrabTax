@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+    background-color:rgb(34, 40, 49);
+}
+
+
+.header{
+    padding: 4px;
+    text-align: center;
+    background: rgb(57, 62, 70);
+    color: white;
+    font-size: 18px;
+}
+
+.header-links{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-links td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-links a{
+    color: white;
+}
+
+
+.content{
+    text-align: center;
+    color: rgba(255,204,29);
+    font-size: 24px;
+}
+
+.content-item-comparisons{
+    text-align:left;
+    margin-left: 35%;
+}
+
+.content-item-comparisons img{
+    float: left;
+}
+
+.content-item-comparisons p{
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.content-about{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
+}
+
+.content-about a{
+    color: white;
+}
+
+.content-faq{
+    font-size 14px;
+    font-family: "Arial";
+}
+
+.faq-question{
+    font-size: 20px;
+    font-family: "Helvetica";
+}
+
+.faq-answer{
+    font-size: 16px;
+    font-family: "Arial";
+}
+
+.content img{
+    position: relative;
+    top: 15px;
+    margin-right:25px;
+}
+
+
+.data{
+    margin-top: 10px;
+    font-size: 100px;
+}

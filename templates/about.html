@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-family:Georgia">🦀 The Crab Tax 🦀 </h1>
+        <table class="header-links">
+            <tr>
+                <td><a href="{{ url_for('home') }}">Home</a></td>
+                <td><a href="{{ url_for('about') }}">About</a></td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br>
+    <div class="content-container">
+        <div class="content-about">
+            <h2>About Us</h2>
+            <hr><br>
+
+            <p>This site tracks how much gold is being removed daily from runescape's economy via the new Grand Exchange tax.</p><br>
+            <p>It was created by <a href="https://twitter.com/Zachary_Dangelo">@Zachary_Dangelo</a>, feel free to send a DM with any questions or concerns.</p><br>
+            <p>You can find the source code on <a href="https://github.com/ZacharyDangelo">GitHub</a>, as well as a video walkthrough below.</p><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qwErXgQf7CA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br><br>
+            <h2>FAQ</h2>
+            <hr>
+            <div class="content-faq">
+                <br><h3 class="faq-question">Why doesn't your information match what Jagex has shown?</h3><br>
+                <p class="faq-answer">Unfortunately, only so much data is available publicly, because of this Jagex will always be able to provide more detailed data than what we can extrapolate.</p>
+                <br><br>
+                <h3 class="faq-question"></h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

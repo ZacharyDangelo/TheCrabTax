@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Crab Tax</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript">
+        var startingAmount = {{ data.startingAmount }}
+        var targetAmount = {{ data.targetAmount }}
+        var secondsUntilUpdate = {{ data.secondsUntilUpdate }}
+        var accumulatedChange = {{ data.accumulatedChange }}
+        var changePerSecond = {{ data.changePerSecond }}
+    </script>
+    <script defer type="text/javascript" src="static/counter.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-family:Georgia">🦀 The Crab Tax 🦀 </h1>
+        <table class="header-links">
+            <tr>
+                <td><a href="{{ url_for('home') }}">Home</a></td>
+                <td><a href="{{ url_for('about') }}">About</a></td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br>
+    <div class="content-container">
+        <div class="content">
+            <img src="static/Coins.png" width="100" height="120">
+            <span class="data" id="goldCounter" style="font-family:verdana"></span><br><br>
+            <p style="font-family:Times New Roman">Gold removed from the game since we started tracking on: 12/11/2021</p>
+            <br><br>
+            <h3>That's equal to:</h3>
+            <div class="content-item-comparisons">
+            <img src="static/3rd_age_top.png" width="50" height="50"><p id="num-robe-tops">X 3rd Age Druidic Robe Tops</p><br>
+            <img src="static/Twisted_bow.png" width="50" height="50"><p id="num-twisted-bows">X Twisted Bows</p><br>
+            <img src="static/Old_school_bond.png" width="50" height="50"><p id="num-bonds">X Old School Bonds</p><br>
+            <img src="static/Vorki.png" width="50" height="50"><p id="num-vorkath-hours">X Hours at Vorkath</p><br>
+            <img src="static/Torag's_hammers.png" width="50" height="50"><p id="num-hammers">X Torag's Hammers</p><br>
+            <img src="static/Prayer_icon.png" width="50" height="50"><p id="num-prayer-exp">X Prayer Experience</p><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

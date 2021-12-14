@@ -15,11 +15,13 @@ def not_found(e):
 @app.route("/")
 def home():
     dataDict = getData()
-    return render_template('base.html',data=dataDict)
+    return render_template('Home.html',data=dataDict)
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template('About.html')
+
+
 
 def getData():
     dataDict = dict()

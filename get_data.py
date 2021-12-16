@@ -1,7 +1,7 @@
 import requests
 import time
 
-filePath = "Z:\Dev\RS_GE\data\data.txt"
+filePath = "Z:\Dev\RS_GE\data\data2.txt"
 
 r = requests.get('https://oldschool.runescape.wiki/w/Module:GEVolumes/data?action=raw')
 a = r.text
@@ -28,6 +28,10 @@ for elem in a:
     elem = elem.split(' = ')
     priceData[elem[0]] = elem[1]
 
+
+mostTaxedItem = requests.get("https://services.runescape.com/m=itemdb/obj_sprite.gif?id=X")
+
+
 tax = 0
 for item in volumeData.keys():
     if "LAST_UPDATE" in item:
@@ -47,6 +51,14 @@ for item in volumeData.keys():
     else:
         currItemTax = (price *.01) * volume
     tax += currItemTax
+
+
+
+
+
+
+
+
 
 with open(filePath,'a') as fd:
     print(str(round(tax)))

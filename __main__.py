@@ -25,34 +25,28 @@ def about():
 
 def getData():
     dataDict = dict()
-
-    todays_data =""
-    yesterdays_data =""
+    fileData = list()
     targetAmount = 0
+
+    #Read data file.
     with open(dataFilePath, 'r') as f:
-        for line in f.readlines()[1:]:
+        for line in f.readlines()[1:]: #Skip first line of the data file as it contains headers.
+            fileData.append(line)
             targetAmount += int(line.split(":")[0])
-    with open(dataFilePath, 'r') as f:
-        todays_data = f.readlines()[-1]
-        startingAmount = targetAmount -  int(todays_data.split(":")[0])
-    with open(dataFilePath, 'r') as f:
-        yesterdays_data = f.readlines()[-2]
+
+    todays_data = fileData[-1]
+    yesterdays_data = fileData[-2]
+    startingAmount = targetAmount - int(todays_data.split(":")[0])
     dataDict["targetAmount"] = targetAmount
-    dataDict["secondsUntilUpdate"] = int(todays_data.split(":")[1]) - round(time.time() - 86400)
+    dataDict["secondsUntilUpdate"] = int(todays_data.split(":")[1]) - round(time.time() - 86400) #There are 86400 seconds in a day.
     accumulatedChange = int(todays_data.split(":")[0]) * (1 - dataDict["secondsUntilUpdate"]/86400)
-    startingAmount = startingAmount + (accumulatedChange)
-
-    changePerSecond = (targetAmount -startingAmount - accumulatedChange)/dataDict["secondsUntilUpdate"]
-
+    startingAmount = startingAmount + accumulatedChange
+    changePerSecond = (targetAmount - startingAmount - accumulatedChange)/dataDict["secondsUntilUpdate"]
 
     dataDict["startingAmount"] = startingAmount
     dataDict["accumulatedChange"] = accumulatedChange
     dataDict["changePerSecond"] = changePerSecond
     return dataDict
-
-
-
-
 
 if __name__ == "__main__":
     app.debug = True

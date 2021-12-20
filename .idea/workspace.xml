@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="771a9726-af5c-4937-8831-b76cb223fcf6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/aboutTracker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/aboutTracker" beforeDir="false" afterPath="$PROJECT_DIR$/data/hitCounter.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
           <entry key="html" value="5" />
           <entry key="js" value="2" />
           <entry key="py" value="6" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -41,7 +39,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="6" />
         </counts>
       </usages-collector>
@@ -52,8 +50,8 @@
           <entry key="css" value="1976" />
           <entry key="html" value="3556" />
           <entry key="js" value="375" />
-          <entry key="py" value="7341" />
-          <entry key="txt" value="89" />
+          <entry key="py" value="7443" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,8 +59,8 @@
           <entry key="CSS" value="1976" />
           <entry key="HTML" value="3556" />
           <entry key="JavaScript" value="375" />
-          <entry key="PLAIN_TEXT" value="90" />
-          <entry key="Python" value="7703" />
+          <entry key="PLAIN_TEXT" value="91" />
+          <entry key="Python" value="7805" />
         </counts>
       </usages-collector>
     </session>
@@ -72,25 +70,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="546">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1640014028436" expanded="true" signature="365:367" ph="..." />
-                <marker date="1640014028436" expanded="true" signature="536:581" ph="..." />
-                <marker date="1640014028436" expanded="true" signature="578:581" ph="..." />
-                <marker date="1640014028436" expanded="true" signature="595:1807" ph="..." />
-                <marker date="1640014028436" expanded="true" signature="1678:1807" ph="..." />
+                <marker date="1640014461141" expanded="true" signature="362:364" ph="..." />
+                <marker date="1640014461141" expanded="true" signature="533:578" ph="..." />
+                <marker date="1640014461141" expanded="true" signature="575:578" ph="..." />
+                <marker date="1640014461141" expanded="true" signature="592:1874" ph="..." />
+                <marker date="1640014461141" expanded="true" signature="1695:1874" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/aboutTracker">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -218,8 +207,9 @@
         <option value="$PROJECT_DIR$/templates/About.html" />
         <option value="$PROJECT_DIR$/data/data2.txt" />
         <option value="$PROJECT_DIR$/get_data.py" />
-        <option value="$PROJECT_DIR$/__main__.py" />
         <option value="$PROJECT_DIR$/data/aboutTracker" />
+        <option value="$PROJECT_DIR$/__main__.py" />
+        <option value="$PROJECT_DIR$/data/hitCounter.txt" />
       </list>
     </option>
   </component>
@@ -290,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.get_data (1)">
+  <component name="RunManager" selected="Python.__main__">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RS_GE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,8 +351,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.get_data (1)" />
         <item itemvalue="Python.__main__" />
+        <item itemvalue="Python.get_data (1)" />
         <item itemvalue="Python.get_data" />
       </list>
     </recent_temporary>
@@ -479,24 +469,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/aboutTracker">
+    <entry file="file://$PROJECT_DIR$/data/hitCounter.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <caret column="1" lean-forward="true" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="546">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1640014028436" expanded="true" signature="365:367" ph="..." />
-            <marker date="1640014028436" expanded="true" signature="536:581" ph="..." />
-            <marker date="1640014028436" expanded="true" signature="578:581" ph="..." />
-            <marker date="1640014028436" expanded="true" signature="595:1807" ph="..." />
-            <marker date="1640014028436" expanded="true" signature="1678:1807" ph="..." />
+            <marker date="1640014461141" expanded="true" signature="362:364" ph="..." />
+            <marker date="1640014461141" expanded="true" signature="533:578" ph="..." />
+            <marker date="1640014461141" expanded="true" signature="575:578" ph="..." />
+            <marker date="1640014461141" expanded="true" signature="592:1874" ph="..." />
+            <marker date="1640014461141" expanded="true" signature="1695:1874" ph="..." />
           </folding>
         </state>
       </provider>

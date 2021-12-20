@@ -5,7 +5,7 @@ import time
 
 app = Flask('hello')
 dataFilePath = "Z:\Dev\RS_GE\data\data.txt"
-aboutTrackerFilePath = "Z:\Dev\RS_GE\data\\aboutTracker.txt"
+aboutTrackerFilePath = 'Z:\Dev\RS_GE\data\hitCounter.txt'
 
 
 #For any route that is not defined, redirect the user to the home page.
@@ -51,10 +51,12 @@ def getData():
     return dataDict
 
 def incrementAboutTracker():
-    with open(aboutTrackerFilePath,'r+') as f:
+    currNum = int()
+    with open(aboutTrackerFilePath,'r') as f:
         currNum =  int(f.read())
         currNum += 1
-        f.write(currNum)
+    with open(aboutTrackerFilePath,'w') as f:
+        f.write(str(currNum))
 
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ import time
 
 app = Flask('hello')
 dataFilePath = "Z:\Dev\RS_GE\data\data.txt"
+aboutTrackerFilePath = "Z:\Dev\RS_GE\data\\aboutTracker.txt"
 
 
 #For any route that is not defined, redirect the user to the home page.
@@ -19,6 +20,7 @@ def home():
 
 @app.route("/about")
 def about():
+    incrementAboutTracker()
     return render_template('About.html')
 
 
@@ -47,6 +49,13 @@ def getData():
     dataDict["accumulatedChange"] = accumulatedChange
     dataDict["changePerSecond"] = changePerSecond
     return dataDict
+
+def incrementAboutTracker():
+    with open(aboutTrackerFilePath,'r+') as f:
+        currNum =  int(f.read())
+        currNum += 1
+        f.write(currNum)
+
 
 if __name__ == "__main__":
     app.debug = True

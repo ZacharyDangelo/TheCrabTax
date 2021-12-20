@@ -2,8 +2,12 @@ import requests
 import time
 
 filePath = "Z:\Dev\RS_GE\data\data2.txt"
+headers = {
+    'User-Agent': 'www.TheCrabTax.com'
+}
+r = requests.get('https://oldschool.runescape.wiki/w/Module:GEVolumes/data?action=raw',headers=headers)
 
-r = requests.get('https://oldschool.runescape.wiki/w/Module:GEVolumes/data?action=raw')
+
 a = r.text
 a = a.split('\n')
 a = [x.strip() for x in a[1:len(a)-1]]
@@ -14,7 +18,7 @@ for elem in a:
     elem = elem.split(' = ')
     volumeData[elem[0]] = elem[1]
 
-r = requests.get('https://oldschool.runescape.wiki/w/Module:GEPrices/data?action=raw')
+r = requests.get('https://oldschool.runescape.wiki/w/Module:GEPrices/data?action=raw',headers=headers)
 a = r.text
 a = a.split('\n')
 a = [x.strip() for x in a[1:len(a) - 1]]

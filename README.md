@@ -20,4 +20,4 @@ Data is pulled from the wiki pages below, then formatted and passed to the HTML 
 The code in this github repo can be used by runing __main__.py and then going to 127.0.0.1:5000
 If you plan to deploy this code however, you will not want to run the application in this way.
 
-My recomendation is to use <a href="https://help.pythonanywhere.com/pages/Flask/">PythonAnywhere</a>
+My recommendation is to use <a href="https://help.pythonanywhere.com/pages/Flask/">PythonAnywhere</a>
